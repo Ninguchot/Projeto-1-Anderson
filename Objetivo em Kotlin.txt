@@ -1,0 +1,10 @@
+1- Defina o seu objetivo final
+
+- Quero criar um app organizador de compras.
+Nome do produto - Valor_Atual - Ultimo_Valor - Valor_Total_No_Mês - Peso_Do_Produto - Peso_Mês
+
+
+2- Defina a data para a entrega desse objetivo
+
+- Diga Publicamente o que irá fazer e diga quando irá mostrar aquilo
+	(Daqui a 10 meses, redes sociais)

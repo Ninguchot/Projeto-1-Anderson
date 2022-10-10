@@ -1,0 +1,16 @@
+//
+App.APK que calcula o valor USD, EUR e CLP atualizado em relação ao BRL.
+
+Primeiro foi peito a logica para que pudesse começar a desenvolver o app
+Depois o Layout do app e as nomeações e cores dos botoes e das funções.
+Depois a logica para a solução para o problema que foi usado uma url com os valores atualizados
+para resolver o problema.
+
+
+Professor - Tiago Aguiar
+
+Video 1
+https://www.youtube.com/watch?v=z0gjnpvb8Zg
+
+Video 2
+https://www.youtube.com/watch?v=tQuZao2M-34

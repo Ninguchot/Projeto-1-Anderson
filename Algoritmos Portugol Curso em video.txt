@@ -1,0 +1,1088 @@
+Primeiro Aula 2
+algoritmo "Ola mundo"
+var
+  msg: Caractere
+inicio
+  msg <- "Ola Mundo"
+  Escreval (msg)
+  Escreva ("Me livrei da maldição!")
+fimalgoritmo
+----------------------------------------------------------------
+Aula 3
+algoritmo "Meu nome"
+var
+   Nome: Caractere
+inicio
+   Escreva ("Digite seu nome: ")
+   Leia(Nome)
+   Escreva ("Muito prazer ", nome)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   N1, n2, S: inteiro
+inicio
+   Escreva("Digite um numero: ")
+   Leia(N1)
+   Escreva("Digite outro numero: ")
+   LEia(N2)
+   S <- N1 * n2
+   Escreva("A multiplicação de ", n1, " e ", n2, " é igual a ", S)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+    A: real
+inicio
+    A <- raizq(81)
+    Escreva(A)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Conversor"
+var
+ angulo, S: Real
+inicio
+Escreva("Informe um angulo: ")
+Leia(angulo)
+S <- sen(Grauprad(angulo))
+Escreva("O seno de ", angulo, " é igual a ", S)
+fimalgoritmo
+----------------------------------------------------------------
+Aula 4
+algoritmo "semnome"
+var
+    a, b, c: Inteiro
+inicio
+    A <- 2
+    B <- 3
+    C <- 5
+    Escreva (nao((a=b) ou (C>a)))
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Algoritmo "Triangulos"
+ 
+Var
+ L1, L2, L3: Real
+ EQ, ES, TRI: Logico
+Inicio
+ Escreva("Digite o primeiro lado: ")
+ Leia(L1)
+ Escreva("Digite o segundo lado: ")
+ Leia(L2)
+ Escreva("Digite o terrceiro lado: ")
+ Leia(L3)
+ EQ <- (L1 = L2) e (L2 = L3)
+ Es <- (L1 <> L2) e (L2 <> L3) e (L1 <> L3)
+ TRI <- (L1 < L2 + L3) E (L2 < L1 + L3) E (L3 < L1 + L2)
+ Escreval ("O triangulo é equilatero? ", EQ)
+ Escreval ("O Triangulo é escaleno? ", ES)
+ ESCREVAL ("É TRIANGULO? ", TRI)
+Fimalgoritmo
+----------------------------------------------------------------
+Aula 5
+algoritmo "idade"
+var
+   Ano_atual, ano_nasc, idade:Inteiro
+inicio
+      Escreva("Em que ano nos estamos? ")
+      Leia(Ano_atual)
+      Escreva("Em que ano eu nasci? ")
+      Leia(ano_nasc)
+      Idade <- ano_atual - ano_nasc
+      Escreva("Minha idade será ", Idade , " anos ")
+ Se (idade >= 21) entao
+         Escreval (" E já terá atingido a maioridade. ")
+      FimSe
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Dolares"
+var
+   C, Q: Inteiro
+   R, D:Real
+inicio
+      C <- 1
+      Escreva ("Quantos vezes você quer converter?")
+      Leia(Q)
+      Enquanto (C <= Q) faca
+            Escreva("Quando eu tenho? R$")
+            Leia(R)
+            D <- R/4.88
+            Escreval("Posso ter US$ ", D:5:2)
+            C <- C + 1
+      Fimenquanto
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Creusa03"
+var
+   F, C:Real
+inicio
+      Escreva("Qual a temp aqui? ")
+      Leia(F)
+      C <- (F-32) / 1.8
+      Escreva("No Brasil estaria ", C:4:1)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+          Preco, Imposto:Real
+inicio
+      Escreva("Qual o valor do produtor? US ")
+      Leia(Preco)
+      Imposto <- Preco*60 / 100
+      Escreva("O imposto será de US$ ", Imposto:5:2)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Eu mesmo fiz
+algoritmo "Quanto_pagar"
+var
+   Juros, parcela, Emprestimo, Valor_parcela:Real
+inicio
+      Escreva("Qual o valor do emprestimo? ")
+      Leia(Emprestimo)
+      Escreva("Quantas parcelas? ")
+      Leia(Parcela)
+      Juros <- Emprestimo*20/100
+      Escreval("Só de Juros são ", Juros)
+      Valor_Parcela <- (Juros+emprestimo)/parcela
+      Escreva("Terei que pagar 10 parcelas de ", Valor_Parcela)
+fimalgoritmo
+----------------------------------------------------------------
+Aula 7
+algoritmo "ParOuImpar"
+var
+   N: Inteiro
+inicio
+   Escreva("Digite um numero qualquer: ")
+   Leia(N)
+   SE (N % 2 = 0) entao
+      Escreval("O numero ", N, " é Par ")
+   senao
+      Escreval("O numero ", N, " é Impar ")
+   Fimse
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+algoritmo "IMC"
+var
+   M, A, IMC: Real
+inicio
+      Escreva("Massa (KG): ")
+      Leia(M)
+      Escreva("Altura (m): ")
+      Leia(A)
+      IMC <- M / (A ^ 2)
+      Escreval("Imc: ", IMC:5:2)
+      Se (IMC >= 18.5) e (IMC < 25) entao
+         Escreva("Parabens! você está em seu peso ideal")
+      senao
+         Escreva("Você não estará em seu peso ideal. COMA MAIS! ")
+      FimSe
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "EstaAptoADirigir?"
+var
+   Ano_Atual, Ano_Nasc, idade:Inteiro
+inicio
+   Escreval("------------------------ ")
+   Escreval("Departamento De Transito ")
+   Escreval("------------------------ ")
+   Escreva("Ano atual (YYYY): ")
+   Leia(Ano_Atual)
+   Escreva("Ano de Nascimento (YYYY): ")
+   Leia(Ano_Nasc)
+   Escreval("---------Status--------- ")
+   Idade <-  Ano_Atual - Ano_Nasc
+   Escreval("Idade ", Idade)
+   Se(Idade >= 18) entao
+      Escreva("Você está apt a tirar a carteira ")
+   Senão
+      escreva("Você não está apt ")
+   FimSe
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   PNota,SNota, Media:Real
+inicio
+   Escreval("------------------------ ")
+   Escreval("  Escola Sexo nasal  ")
+   Escreval("------------------------ ")
+   Escreva("Primeira Nota: ")
+   Leia(PNota)
+   Escreva("Segunda Nota: ")
+   Leia(SNota)
+   Media <- (PNota + SNota) / 2
+   Se(Media >= 7) entao
+      EscrevaL("------------------------ ")
+      EscrevaL("Media ", Media)
+      Escreval("Aluno aprovado ")
+      EscrevaL("------------------------ ")
+   SeNao
+      EscrevaL("------------------------ ")
+      Escreval("Media ", Media)
+      EscrevaL("Aluno Reprovado ")
+      EscrevaL("------------------------ ")
+   FimSe
+fimalgoritmo
+----------------------------------------------------------------
+Aula 8
+algoritmo "IMC"
+var
+   M, A, IMC: Real
+inicio
+   Escreva("Massa (KG): ")
+   Leia(M)
+   Escreva("Altura (m): ")
+   Leia(A)
+   IMC <- M / (A ^ 2)
+   Escreval("Imc: ", IMC:5:2)
+   Se(IMC < 17) entao
+      Escreval("Muito abaixo do peso")
+   senao
+      Se(IMC) >= 17 e (IMC <= 18.5) entao
+         Escreval("Abaixo do peso")
+      Senao
+         se (IMC >= 18.5) e (IMC <25) entao
+            Escreval("Peso Ideal")
+         Senao
+            se(IMC >= 5) e (IMC < 30) entao
+               Escreval("Sobrepeso")
+            senao
+               Se (IMC >= 30) E (IMC < 35) entao
+                  Escreval("Obesidade")
+               senao
+                  Se (IMC >= 35) e (IMC < 40) entao
+                     Escreval("Obesidade severa")
+                  Senao
+                     Escreval("Obesidade Morbida")
+                  Fimse
+               Fimse
+            Fimse
+         Fimse
+      Fimse
+   Fimse
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Doação"
+var
+   D, Valor :Inteiro
+inicio
+   Escreval(" --------------------------- ")
+   Escreval("            Doação           ")
+   Escreval(" --------------------------- ")
+   Escreval(" Muito obrigaado por ajudar  ")
+   Escreval(" [1] para doar R$10 ")
+   Escreval(" [2] para doar R$25 ")
+   Escreval(" [3] para doar R$50 ")
+   Escreval(" [4] para doar outros valores ")
+   Escreval(" [5] para cancelar ")
+   Leia(D)
+   Escolha D
+   Caso 1
+      Valor <- 10
+   Caso 2
+      Valor <- 25
+   Caso 3
+      Valor <- 50
+   Caso 4
+      Escreva ("Qual o valor da doação? R$")
+      Leia (Valor)
+   Caso 5
+      Valor <- 0
+   FimEscolha
+   Escreval(" --------------------------- ")
+   Escreval(" SUA DOAÇÃO FOI DE R$", Valor)
+   Escreval(" MUITO OBRIGADO!")
+   Escreval(" --------------------------- ")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "SalarioDEP"
+var
+   Nome: Caractere
+   sal, Nsal :Real
+   Dep: inteiro
+inicio
+      Escreva ("Qual o nome do Funcionario? ")
+      Leia(Nome)
+      Escreva ("Qual o salario do Funcionario? ")
+      Leia(Sal)
+      Escreva ("Qual e a quantidade de dependentes? ")
+      Leia(Dep)
+      Escolha dep
+              caso 0
+                   Nsal <- Sal + (sal*5/100)
+              caso 1,2,3
+                   Nsal <- Sal + (sal*10/100)
+              Caso 4,5,6
+                   Nsal <- Sal + (sal*15/100)
+              outrocaso
+                   Nsal <- Sal + (sal*18/100)
+      Fimescolha
+      Escreval("o novo salario de ", Nome, "Sera de R$", NSal:5:2)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Nota"
+var
+   PNota,SNota, Media, aproveitamento:Real
+inicio
+   Escreval("------------------------ ")
+   Escreval("    Escola Sexo nasal    ")
+   Escreval("------------------------ ")
+   Escreva("Primeira Nota: ")
+   Leia(PNota)
+   Escreva("Segunda Nota: ")
+   Leia(SNota)
+   Media <- (PNota + SNota) / 2
+   EscrevaL("Media ", Media)
+   Se(Media >= 9) e (media <= 10) entao
+      Escreval("Aproveitamento A")
+   Senao
+      Se(Media >= 8) e (Media <= 8.9) entao
+         Escreval("Aproveitamento B")
+      Senao
+         se(Media >= 7) e (Media <= 7.9) entao
+            Escreval("Aproveitamento C")
+         Senao
+            se(Media >= 6) e (Media <= 6.9) entao
+               Escreval("Aproveitamento D")
+            Senao
+               se(Media >= 5) e (Media <= 5.9) entao
+                  Escreval("Aproveitamento E")
+               Senao
+                  se(Media <= 4.9) entao
+                     Escreval("Aproveitamento F")
+                  Fimse
+               Fimse
+            Fimse
+         Fimse
+      Fimse
+   Fimse
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   M, B, Diferenca:Inteiro
+inicio
+   Escreval( "--------------------" )
+   Escreval( "        A x B        ")
+   Escreval( "--------------------" )
+   Escreva("Quantos Gols do Bangu? ")
+   Leia(M)
+   Escreva("Quantos Gols do Madureira? ")
+   Leia(B)
+   Diferenca <- (M-B)
+   Se(Diferenca <= -1) entao
+     Diferenca <- B - M
+   fimse
+   Escreval("Diferena: ", Diferenca)
+   Se(Diferenca = 0) entao
+      Escreval("Empate")
+   Senão
+      Se(Diferenca <= 3) entao
+         Escreval("STATUS: Partida normal")
+      Senao
+         Se(Diferenca <= 5) então
+            Escreval("STATUS: Goleada")
+         Fimse
+      Fimse
+   Fimse
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   M, B, Diferenca:Inteiro
+inicio
+   Escreval( "--------------------" )
+   Escreval( "        A x B        ")
+   Escreval( "--------------------" )
+   Escreva("Quantos Gols do Bangu? ")
+   Leia(M)
+   Escreva("Quantos Gols do Madureira? ")
+   Leia(B)
+   Diferenca <- (M-B)
+   Se(Diferenca <= -1) entao
+     Diferenca <- B - M
+   fimse
+   Escreval("Diferena: ", Diferenca)
+   Escolha diferenca
+           Caso 0
+                Escreval("Empate")
+           caso 1,2,3,4
+                Escreval("Partida_normal")
+           Caso 5
+                Escreval("Goleada")
+   Fimescolha
+fimalgoritmo
+----------------------------------------------------------------
+Aula 9
+algoritmo "Conta até 10"
+var
+   Contador:Inteiro
+inicio
+      Contador <- 10
+      Enquanto (Contador >= 0) faca
+      Escreval(Contador)
+          Contador <- Contador - 1
+      FimEnquanto
+      Escreval("Terminei de contar")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Conta até 10"
+var
+   Valor, Salto, Contador:Inteiro
+inicio
+      Contador <- 0
+      Escreva("Quer contar até quanto? ")
+      Leia(Valor)
+      Escreva("Qual será o valor do Salto? ")
+      Leia(Salto)
+      Enquanto (Contador <= valor) faca
+      Escreval(Contador)
+          Contador <- Contador + Salto
+      FimEnquanto
+      Escreval("Terminei de contar")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Somador Numerico"
+var
+   Cont, N, S, Maior, Menor:inteiro
+inicio
+    cont <- 1
+    S <- 0
+    Menor <- 1000
+       Enquanto (Cont <= 5)Faca
+       Escreva ("Digite o ", cont, ".o valor : ")
+       Leia(N)
+       Se (N > maior) entao
+          Maior <- N
+       Fimse
+       Se (N < Menor) então
+          Menor <- N
+       Fimse
+       S <- S + N
+       Cont <- cont + 1
+    Fimenquanto
+    Escreval("A soma de todos os valores foi ", S)
+    Escreval("Maior numero foi: ", Maior)
+    Escreval("Menor numero foi ", Menor)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Somador Numerico"
+var
+   Cont, I, F:inteiro
+inicio
+   Escreval("Contagem Inteligente")
+   Escreval("--------------------")
+   Escreva("Inicio: ")
+   Leia(I)
+   Escreva("Fim: ")
+   Leia(F)
+   Escreval("--------------------")
+   Escreval("  C O N T A N D O   ")
+   Escreval("--------------------")
+   Se(F > I)entao
+   Cont <- I
+   Enquanto (Cont <= F)Faca
+      Escreva (Cont, "... ")
+      Cont <- cont + 1
+   Fimenquanto
+   Senao
+   Cont <- I
+   Enquanto (cont >= F)Faca
+       Escreva(cont, "... ")
+       Cont <- cont - 1
+   Fimenquanto
+   FimSe
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   Aluno, cont: Inteiro
+   Nome, NomeTop:Caractere
+   Nota, Maiornota:Real
+inicio
+   Escreval("------------------------ ")
+   Escreval("  Escola Sexo nasal  ")
+   Escreval("------------------------ ")
+   Escreva("Quantos alunos a turma tem? ")
+   Leia(Aluno)
+   Escreval("------------------------ ")
+   Cont <- 1
+   Enquanto (Cont <= Aluno)Faca
+       Escreval("Aluno ", Cont)
+       Escreva("Nome: ")
+       Leia(Nome)
+       Escreva("Qual a Nota de ", nome,":")
+       Leia(Nota)
+       Se (Nota > Maiornota) entao
+          Maiornota <- Nota
+          NomeTop <- Nome
+       Fimse
+       Cont <- cont + 1
+    Fimenquanto
+    Escreval("O Puto com maior nota foi o ", NomeTop, " Com a maior nota de ", Maiornota)
+Fimalgoritmo
+----------------------------------------------------------------
+Aula 10
+algoritmo "semnome"
+var
+   C, N, F:Inteiro
+   R:Caractere
+inicio
+Repita
+   Escreva("Digite um numero: ")
+   Leia(N)
+   C <- N
+   F <- 1
+   REpita
+         F <- F * C
+         c <- c - 1
+   Ate (C < 1)
+   Escreval("O valor do fatorial de ", N, " é igual a ", F)
+   Escreva ("Quer continuar? [S/N]")
+   Leia (R)
+   LimpaTela
+Ate (R = "N")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   C, N, contdiv:Inteiro
+inicio
+   C <- 1
+   Contdiv <- 0
+   Escreva("Digite um numero: ")
+   Leia(N)
+   Repita
+         Escreva(C)
+         Se (N % c = 0) entao
+            Contdiv <- Contdiv + 1
+         Fimse
+         C <- c + 1
+   Ate (C > N)
+   Se (Contdiv > 2) entao
+      Escreval (" O valor ",N," não é primo")
+   Senao
+      Escreval (" O Valor ",N," é primo")
+   Fimse
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "SuperContador"
+var
+   Cont,N:inteiro
+   Sair: caractere
+inicio
+      Cont <- 1
+   Repita
+      Escreval ("  ")
+      Escreval (" =================")
+      Escreval (" |    M E N U    |")
+      Escreval (" =================")
+      Escreval (" =================")
+      Escreval (" | [1] de 1 a 10 |")
+      Escreval (" | [2] de 10 a 1 |")
+      Escreval (" | [3] Sair      |")
+      Escreval (" =================")
+      Leia(N)
+            Se (N = 1)entao
+               Repita
+                     Escreva(Cont," ...")
+                     Cont <- Cont + 1
+               Ate (Cont > 10)
+            Senao
+                 Se (N = 2)entao
+                 Cont <- 10
+                    Repita
+                          Escreva(Cont," ...")
+                          Cont <- Cont - 1
+                    Ate (Cont < 1)
+                 Fimse
+            Fimse
+   Ate (N = 3)
+   Escreval("SAINDO DESSA PORRA")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   Sexo, Continuar: Caractere
+   Idade, Cor, M, F:Inteiro
+inicio
+   Repita
+      Limpatela
+      Escreval (" ====================== ")
+      Escreval ("   Seletor de Pessoas   ")
+      Escreval (" ====================== ")
+      Escreva ("Qual o sexo? [M/F] ")
+      Leia(Sexo)
+      Escreva ("Qual a idade? ")
+      Leia(Idade)
+      Escreval ("Qual a cor do cabelo? ")
+      Escreval (" ------------------- ")
+      Escreval ("[1] Preto ")
+      Escreval ("[2] Castanho ")
+      Escreval ("[3] Loiro ")
+      Escreval ("[4] Ruivo ")
+      Leia(Cor)
+      Se (Sexo = "M") e (Idade >= 18) e (Cor = 2)entao
+         M <- M + 1
+      Fimse
+           Se (Sexo = "F") e (Idade >= 25) e (Idade <= 30) e (cor = 3)entao
+              F <- F + 1
+           Fimse
+                Escreval ("Quer continuar? [S/N] ")
+                Leia(Continuar)
+   Ate (Continuar = "N")
+   Limpatela
+       Escreval (" O total de homens com mais de 18 e cabelos castanhos ",M)
+       Escreval (" Total de mulheres entre 25 e 30 e cabelos loiros ",F)
+fimalgoritmo
+----------------------------------------------------------------
+Aula 11
+Algoritmo "semnome"
+Var
+   C:inteiro
+Inicio
+      Para C <- 1 ate 10 passo 1 faca
+           Escreval(C)
+      Fimpara
+      Para C <- 10 ate 1 passo -1 faca
+           Escreval(C)
+      Fimpara
+Fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Algoritmo "Valores_Pares"
+Var
+   Cont, V:inteiro
+Inicio
+   Escreva("Digite um valor: ")
+   Leia(V)
+   Se (V%2=1)entao
+      V <- V-1
+   Fimse
+   Para cont <- V ate 0 passo -2 faca
+        Escreval(Cont)
+   Fimpara
+Fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Quantos entrew 0 e 10"
+var
+   C, V, Tot010:Inteiro
+inicio
+Tot010 <- 0
+    Para C <- 1 ate 6 faca
+         Escreva("Digite um valor: ")
+         Leia(V)
+         Se(V >= 0) e (v<=10) entao
+           Tot010 <- tot010 + 1
+         Fimse
+    Fimpara
+    Limpatela
+    Escreval ("Ao todo foram ", tot010, " Valores entre 0 e 10")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Quantos entre 0 e 10"
+var
+   C, V, Tot010, S_impares:Inteiro
+inicio
+Tot010 <- 0
+    Para C <- 1 ate 6 faca
+         Escreva("Digite um valor: ")
+         Leia(V)
+         Se(V >= 0) e (v<=10) entao
+           Tot010 <- tot010 + 1
+           Se (V%2=1) entao
+              S_impares <- S_impares + v
+           Fimse
+         Fimse
+    Fimpara
+    Limpatela
+    Escreval ("Ao todo foram ", tot010, " Valores entre 0 e 10")
+    Escreval ("Entao a soma de Impares foi",S_impares)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Combinadores"
+ var
+    C1, C2:Inteiro
+ inicio
+     Para C1 := 1 ate 3 faca
+          Para C2 := 1 ate 3 faca
+               Escreval(C1, C2)
+          Fimpara
+     Fimpara
+ fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Fibonacci"
+var
+  C, T1, T2, T3 : Inteiro
+inicio
+   T1 <- 0
+   Escreva (T1)
+   T2 <- 1
+   Escreva (T2)
+   Para C := 3 ate 15 faca
+        T3 := T1 + T2
+        Escreva (T3)
+        T1 := T2
+        T2 := T3
+   FimPara
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   S, V, C, D, Sp, N:inteiro
+   M: Real
+inicio
+   s <- 0
+   Para c <- 1  ate 5 faca
+        Escreva("Digite o ",C," numero ")
+        Leia(V)
+        S <- S + V
+        Se (V%5=0) entao
+        D <- D + 1
+        Fimse
+             Se (V%2=0) entao
+             Sp <- sp + V
+             Fimse
+                  Se (0 >= V) entao
+                  N <- N + 1
+                  Fimse
+   Fimpara
+   M <- S / (C-1)
+   Escreval (" A soma de todos os numero são ",S)
+   Escreval (" A media entre os valores são ",M)
+   Escreval (" São divisiveis por 5 ",D)
+   Escreval (" Nulo ", N)
+   Escreval (" A soma dos pares deu ",Sp)
+fimalgoritmo
+----------------------------------------------------------------
+Aula 12
+algoritmo "semnome"
+var
+   I: Inteiro
+   N, Pesado:Caractere
+   P, Mai:Real
+   Procedimento Topo()
+Inicio
+   Limpatela
+   Escreval("----------------------------------------")
+   Escreval("           DETECTOR DE PESADO           ")
+   Escreval("   Maior peso até agora: ", Mai, "Kg    ")
+   Escreval("----------------------------------------")
+Fimprocedimento
+inicio
+   Topo()
+   Para I <- 1 ate 5 faca
+        Escreva("Digite o nome: ")
+        Leia(N)
+        Escreva("Digite o peso de ", N, ": ")
+        Leia(P)
+        Se (P>Mai) entao
+           Mai <- P
+           Pesado <- N
+        Fimse
+        Topo()
+   Fimpara
+   Limpatela
+   Topo()
+   Escreval("A pessoa mais pesada foi ", Pesado, ", com ", Mai, " quilos. ")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   x , Y: Inteiro
+Procedimento Soma(A, B:inteiro)
+Inicio
+      Escreval("Recebi o valor ",A)
+      Escreval("Recebi o valor ",B)
+      Escreval("A soma entre os dois é ", A + B)
+Fimprocedimento
+inicio
+      X <- 5
+      Y <- 3
+      Soma(X, Y)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   N:Inteiro
+Procedimento ParouImpar(V:Inteiro)
+Inicio
+      Se (V%2=0) entao
+         Escreval("O numero ", v, " é Par")
+      senao
+           Escreval("O numero ", V, " é Impar")
+      Fimse
+Fimprocedimento
+inicio
+      Escreva("Digite um numeor: ")
+      Leia(N)
+      ParouImpar(N)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   X, Y:inteiro
+Procedimento Soma (var A, B:Inteiro)
+Inicio
+            A <- A + 1
+            B <- B + 2
+            Escreval("Valor de A = ", A)
+            Escreval("Valor de B = ", B)
+            Escreval("Soma A + B = ", A+B)
+FimProcedimento
+inicio
+      X <- 4
+      Y <- 8
+      Soma (x, y)
+      Escreval("Valor de X = ", X)
+      Escreval("Valor de Y = ", Y)
+fimalgoritmo
+----------------------------------------------------------------
+Aula 13
+algoritmo "semnome"
+var
+   V1, V2, S:Inteiro
+Funcao Soma(X, Y: inteiro): inteiro
+Inicio
+      Retorne x + Y
+Fimfuncao
+inicio
+   Escreva("Digite o primeiro Valor: ")
+   Leia(V1)
+   Escreva("Digite o segundo valor: ")
+   Leia(V2)
+   S <- soma(V1, V2)
+   Escreva(" A soma de", V1, " e ", V2, " e igual a ", S)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+  N:inteiro
+  R: caractere
+Funcao Parouimpar(V:Inteiro): caractere
+Inicio
+      Se(V%2=0) entao
+         Retorne "Par"
+      Senao
+         Retorne "Impar"
+      Fimse
+Fimfuncao
+inicio
+   Escreva("Digite um numero: ")
+   Leia(N)
+   R <- Parouimpar(N)
+   Escreva ("O numero ", N, " e um valor ", R)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   N, F:Inteiro
+Funcao Fatorial(V:Inteiro): inteiro
+Var C, R: inteiro
+Inicio
+      R <- 1
+      Para C <- 1 ate V faca
+           R <- R * C
+      Fimpara
+      Retorne R
+fimfuncao
+inicio
+   Escreva("Digite um numero: ")
+   Leia(N)
+   F <- Fatorial(N)
+   Escreval("O valor de ", N, " é igual a ", F)
+fimalgoritmo
+----------------------------------------------------------------
+Aula 14
+algoritmo "semnome"
+var
+   V: Vetor[1..6] de inteiro
+   C, S:inteiro
+inicio
+   Para C <- 1 ate 6 faca
+        Escreva("Digite o ", c, "o Valor: ")
+        Leia(V[C])
+        S <- (V[c]) + S
+   Fimpara
+   Limpatela
+   Escreval("Soma total igual a ", "{",S,"}")
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   val: vetor[1..7] de Inteiro
+   I, Totalpar, T: inteiro
+inicio
+      Totalpar <- 0
+    Para I <- 1 ate 7 faca
+         Escreva("Digite o ", I,"o. Valor: ")
+         Leia(Val[I])
+         Se ((val[I]%2)=1) entao
+            Escreval("É Impar")
+         Senao
+            Escreval("É Par")
+            Totalpar <- Totalpar + 1
+         Fimse
+    T <- I + 0
+    Fimpara
+    Limpatela
+    Escreval("Você digitou", T," Valores e Temos ", Totalpar," Pares")
+    Para I <- 1 ate 7 faca
+         Se (Val[i]%2=0) entao
+             Escreval("Valor par na posição ", I)
+         Fimse
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   Nome: vetor[1..4] de caractere
+   n1: vetor[1..4] de real
+   n2: vetor[1..4] de real
+   m: vetor[1..4] de real
+   I, tote: inteiro
+   Sm, mt: real
+inicio
+   Para i <- 1 ate 4 faca
+        Escreval("ALUNO ", I)
+        ESCREVA("nOME: ")
+        lEIA(nOME[I])
+        Escreva("Primeira nota: ")
+        Leia(N1[i])
+        Escreva("Segunda nota: ")
+        Leia(n2[i])
+        m[i] <- (n1[i]+n2[i])/2
+        sm <-  sm + m[i]
+   Fimpara
+        mt <- sm/4
+   Limpatela
+   Escreval("LISTAGEM DE ALUNOS")
+   Escreval("------------------")
+   Para I <- 1 ate 4 faca
+        Escreval(Nome[i]:15, m[i])
+        se (m[i] > mt)entao
+           tote  <- tote + 1
+        Fimse
+   Fimpara
+   Escreval("Temos ", tote, " alunos acima da media da turma que é ", mt:4:1)
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "Soc"
+var
+   Nome:caractere
+   soc: vetor[1..10] de caractere
+   c, tot:inteiro
+inicio
+   tot <- 0
+   Para c <- 1 ate 3 faca
+        Escreva("Digite seu nome: ")
+        Leia(Nome)
+        Se (copia(maiusc(nome), 1, 1) = "C") entao
+           tot <- tot + 1
+           Soc[tot] <- nome
+        Fimse
+   Fimpara
+   
+   Limpatela
+   Escreval("LISTAGEM FINAL!")
+   para C <- 1 ate tot faca
+        Escreval(Soc[c])
+   Fimpara
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "semnome"
+var
+   vet: vetor[1..10] de inteiro
+   i,j, aux: Inteiro
+inicio
+   Para I <- 1 ate 10 faca
+        Escreva("Digite um valor: ")
+        Leia(Vet[I])
+   Fimpara
+   
+   Para I <- 1 ate 9 faca
+        Para J <- i+1 ate 10 faca
+             se(vet[i] > vet[j]) entao
+                Aux <- vet[i]
+                Vet[i]<- vet[j]
+                Vet[j] <-  aux
+             Fimse
+        Fimpara
+   Fimpara
+   
+   Para I <- 1 ate 10 faca
+        Escreva("{",Vet[i],"}")
+   Fimpara
+fimalgoritmo
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+algoritmo "CampeonatoFutebol"
+var
+   time: vetor [1..3] de caractere
+   c: inteiro
+inicio
+   Para c <- 1 ate 3 faca
+        Escreva("Time ", c, ": ")
+        Leia(time[c])
+   FimPara
+   LimpaTela
+   
+   Para c <- 1 ate 3 faca
+        se (Time[c] = Time[1])  entao
+           Escreval(time[1], "[ ] X [ ]", Time[2])
+           Escreval(time[1], "[ ] X [ ]", Time[3])
+        senão
+             se (Time[c] = Time[2]) entao
+                Escreval(time[2], "[ ] X [ ]", Time[1])
+                Escreval(time[2], "[ ] X [ ]", Time[3])
+             senao
+                  se (time[C] = time[3]) entao
+                      Escreval(time[3], "[ ] X [ ]", Time[1])
+                      Escreval(time[3], "[ ] X [ ]", Time[2])
+                  fimse
+             fimse
+        fimse
+   FimPara
+   
+fimalgoritmo
+----------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
